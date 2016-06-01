@@ -1,0 +1,278 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.======.\ ' J           
+                         "-.   "__"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..-=  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+
+<!--
+    
+    So you'd like to know how to use impress.js?
+    
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+    
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
+    
+    You need to design and build it by hand.
+    
+    So...
+    
+    Would you still like to know how to use impress.js?
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Gulp - Sposób na automatyzacje pracy</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="prism.css" rel="stylesheet" >
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div id="overview-start" class="step" data-x="10000" data-y="1500" data-scale="25">
+        <img src="http://gulpjs.com/img/gulp-white-text.svg" alt="" style="display: block; margin: -300px auto;">
+        <p style="text-align: center; color: white; position: relative; top: 500px; font-family: 'Open Sans', Arial, sans-serif;">gulp-uph.surge.sh</p>
+    </div>
+    <div id="front" class="step slide slide--first-level" data-x="0" data-y="0" data-scale="5">
+        <h1>Gulp</h1>
+        <h2>Sposób na automatyzacje pracy</h2>
+    </div>
+
+    <div id="what-is-it" class="step slide slide--first-level" data-x="5000" data-y="0" data-scale="5">
+        <h2>Co to jest?</h2>
+        <ul>
+            <li>Najlepszy pomocnik :-)</li>
+            <li>Apliacja Node.js</li>
+            <li>Biblioteka</li>
+        </ul>
+    </div>
+
+    <div id="what-he-do" class="step slide slide--first-level" data-x="10000" data-y="0" data-scale="5">
+        <h2>Co pomocnik zrobi za Ciebie?</h2>
+        <ul>
+            <li>Zarządzania stylami
+                <ul>
+                    <li>kompilacja z SCSS</li>
+                    <li>prefixowanie</li>
+                    <li>konkatenacja</li>
+                    <li>minifikacja</li>
+                </ul></li>
+            <li>Zarzadzania skryptami
+                <ul>
+                    <li>kompilacja z Bable/TypeScript</li>
+                    <li>minifikacja</li>
+                </ul></li>
+            <li>Automatyczne odświeżanie przeglądarki - LiveReload</li>
+            <li>Minifikacja plików</li>
+            <li>Ułatwia zarządzanie zależnościami np. czcionki, biblioteki zewnętrzne</li>
+            <li>oraz wiele, wiele innych - duży zbiór gotowych wtyczek</li>
+        </ul>
+    </div>
+
+    <div id="how-to-use" class="step slide slide--first-level" data-x="15000" data-y="0" data-scale="5">
+        <h2>Jak obsługiwać?</h2>
+        <p>Wymagany jest Node.js na komputerze.</p>
+        <ol>
+            <li>Zainstalować <i>gulp</i>
+                <pre><code class="highlight language-bash">$ npm install --global gulp-cli
+$ npm install --save-dev gulp</code></pre></li>
+            <li>Zainstalować wtyczki <i>gulp</i>
+                <pre><code class="highlight language-bash">$ npm install gulp-sass gulp-uglifyjs --save-dev</code></pre></li>
+            <li>Stworzyć plik gulpfile.js<ul>
+                <li> 6 prostych metod: gulp.task, gulp.src, gulp.dest, gulp.watch, gulp.run, .pipe </li>
+            </ul></li>
+            <li>Uruchamiać, uruchamiac, uruchamiać, uruchamiać</li>
+        </ol>
+
+    </div>
+
+
+
+    <div id="api-gulp-task" class="step slide slide--func" data-x="14950" data-y="1200" data-scale=".7">
+        <h2>gulp.task</h2>
+        <pre><code class="highlight language-javascript">gulp.task(name, [dep], fn)</code></pre>
+        <p>Definiuje nowe zadanie o nazwie <code>name</code>. Zadanie okreslane jest przez funkcje <code>fn</code>.</p>
+        <pre><code class="highlight language-javascript">gulp.task('scss', function () {
+    return gulp.src('./source/*.xml')
+        .pipe(gulp.dest('./destination/'));
+});</code></pre>
+    </div>
+    
+    <div id="api-gulp-src" class="step slide slide--func" data-x="15600" data-y="1200" data-scale=".6">
+        <h2>gulp.src</h2>
+        <pre><code class="highlight language-javascript">gulp.src(paths)</code></pre>
+        <p>"Otwiera" pliki z scieżki <code>paths</code> i zwraca strumień</p>
+        <pre><code class="highlight language-javascript">gulp.task('scss', function () {
+    return gulp.src('./source/*.xml')
+        .pipe(gulp.dest('./destination/'));
+});</code></pre>
+    </div>
+
+    <div id="api-gulp-dest" class="step slide slide--func" data-x="16200" data-y="1200" data-scale=".7">
+        <h2>gulp.dest</h2>
+        <pre><code class="highlight language-javascript">gulp.dest(path)</code></pre>
+        <p>Zapisuje strumień do katalogu <code>path</code>.</p>
+        <pre><code class="highlight language-javascript">gulp.task('scss', function () {
+    return gulp.src('./source/*.xml')
+        .pipe(gulp.dest('./destination/'));
+});</code></pre>
+    </div>
+
+    <div id="api-gulp-watch" class="step slide slide--func" data-x="13750" data-y="1300" data-scale=".8">
+        <h2>gulp.watch</h2>
+        <pre><code class="highlight language-javascript">gulp.watch(path, tasks);</code></pre>
+        <p>Zaczyna obserwowac pliki <code>path</code> i uruchamia zadania <code>task</code>.</p>
+        <pre><code class="highlight language-javascript">gulp.task('watch', function () {
+    gulp.watch('./assets/scss/*.scss', ['scss']);
+});</code></pre>
+    </div>
+
+    <div id="api-gulp-run" class="step slide slide--func" data-x="14500" data-y="1300" data-scale=".6">
+        <h2>gulp.run</h2>
+        <pre><code class="highlight language-javascript">gulp.run(tasks);</code></pre>
+        <p>Uruchamia zadania <code>tasks</code>.</p>
+        <pre><code class="highlight language-javascript">gulp.task('compile', function () {
+    gulp.run(['scss', 'js', 'images']);
+});</code></pre>
+    </div>
+
+    <div id="api-pipe" class="step slide slide--func" data-x="15000" data-y="1300" data-scale=".5">
+        <h2>.pipe</h2>
+        <pre><code class="highlight language-javascript">.pipe(plugin)</code></pre>
+        <p>Transformuje strumień za pomoca wtyczki <code>plugin</code>.</p>
+        <pre><code class="highlight language-javascript">return gulp.src('./assets/scss/style.css')
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./static/css/'));
+    .pipe(livereload());</code></pre>
+    </div>
+
+    <div id="how-to-use2" class="step" data-x="15000" data-y="0" data-scale="5" data-fake-target="how-to-use"></div>
+
+    <div  id="example" class="step slide slide--first-level" data-x="20000" data-y="0" data-scale="5" data-height="1900">
+        <pre><code class="highlight language-javascript">var gulp = require('gulp');
+var scss = require('gulp-scss');
+var autoprefixer = require('gulp-autoprefixer');
+var livereload = require('gulp-livereload');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+
+gulp.task('scss', function () {
+    return gulp.src('./assets/scss/style.scss')
+        .pipe(scss())
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('./static/css/'))
+        .pipe(livereload());
+});
+
+gulp.task('js', function () {
+    return gulp.src('./assets/js/*.js')
+        .pipe(concat('script.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('/static/js/'))
+        .pipe(livereload())
+});
+
+gulp.task('watch', function (){
+    livereload.listen();
+    gulp.watch('./assets/scss/*.scss', ['scss']);
+    gulp.watch('./assets/js/*.js', ['js']);
+});
+
+gulp.task('default', ['scss', 'js', 'watch']);</code></pre></li>
+    </div>
+    <div id="example1" class="step" data-x="19000" data-y="-1000" data-scale="2" data-fake-target="example"></div>
+    <div id="example2" class="step" data-x="19000" data-y="-300" data-scale="2" data-fake-target="example"></div>
+    <div id="example3" class="step" data-x="19000" data-y="600" data-scale="2" data-fake-target="example"></div>
+    <div id="example4" class="step" data-x="19000" data-y="1100" data-scale="2" data-fake-target="example"></div>
+
+</div>
+
+<script src="impress.js"></script>
+<script> 
+var api = impress();
+api.init();
+// document.addEventListener("impress:stepenter", function (event) {
+//     var fake_target = event.target.dataset.fakeTarget;
+//     console.log(fake_target);
+//     if(fake_target){
+//         document.querySelector('#' + fake_target).classList.add('active');
+//     }
+
+// }, false);
+
+// document.addEventListener("impress:stepleave", function (event) {
+//     var fake_target = event.target.dataset.fakeTarget;
+//     console.log("BB" + fake_target);
+//     if(fake_target){
+//         document.querySelector('#' + fake_target).classList.remove('active');
+//     }
+// }, false);
+
+
+</script>
+<script src="prism.js"></script>
+
+</body>
+</html>
